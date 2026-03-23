@@ -2,889 +2,823 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Cobey Culton — Strategic Communications & Media Relations | Healthcare • Public Health • Health Tech" />
-  <title>Cobey Culton | Strategic Communications</title>
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Cobey Culton | Strategic Communications" />
-  <meta property="og:description" content="Strategic communications leader translating complex work into clear narratives and high-impact earned media." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="assets/headshot.jpg" />
-
-  <!-- Preload headshot for crisp LCP -->
-  <link rel="preload" as="image" href="assets/headshot.jpg" imagesizes="(max-width: 960px) 92vw, 420px" />
-
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Cobey Culton is a strategic communications leader focused on healthcare, public health, and health tech storytelling."
+  />
+  <title>Cobey Culton | Strategic Communications Leader</title>
   <style>
-    /* -----------------------------
-      Design system (modern + calm)
-    ------------------------------ */
-    :root{
-      color-scheme: dark;
-
-      --bg0: #070a12;
-      --bg1: #0a1020;
-      --card: rgba(255,255,255,.06);
-      --card2: rgba(255,255,255,.08);
-      --stroke: rgba(255,255,255,.10);
-      --stroke2: rgba(255,255,255,.14);
-
-      --text: rgba(255,255,255,.92);
-      --muted: rgba(255,255,255,.72);
-      --faint: rgba(255,255,255,.56);
-
-      --accent: 96 165 250;   /* blue */
-      --accent2: 52 211 153;  /* green */
-
-      --radius-lg: 22px;
-      --radius-md: 16px;
-      --radius-sm: 12px;
-
-      --shadow: 0 24px 70px rgba(0,0,0,.45);
-      --shadow-soft: 0 10px 30px rgba(0,0,0,.28);
-
-      --max: 1100px;
-
-      --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
-      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-
-      --step--1: clamp(0.86rem, 0.82rem + 0.14vw, 0.94rem);
-      --step-0:  clamp(1.00rem, 0.96rem + 0.22vw, 1.10rem);
-      --step-1:  clamp(1.18rem, 1.08rem + 0.48vw, 1.45rem);
-      --step-2:  clamp(1.45rem, 1.26rem + 0.90vw, 1.95rem);
-      --step-3:  clamp(1.90rem, 1.55rem + 1.60vw, 2.70rem);
-      --step-4:  clamp(2.40rem, 1.80rem + 2.50vw, 3.35rem);
-
-      --space-1: 8px;
-      --space-2: 12px;
-      --space-3: 16px;
-      --space-4: 22px;
-      --space-5: 30px;
-      --space-6: 42px;
-      --space-7: 60px;
+    :root {
+      color-scheme: light;
+      --bg: #efe5de;
+      --bg-soft: #f7f0ea;
+      --panel: #f5ede7;
+      --panel-strong: #e9ddd4;
+      --text: #1f1917;
+      --muted: #62534c;
+      --line: rgba(31, 25, 23, 0.22);
+      --line-strong: rgba(31, 25, 23, 0.36);
+      --accent: #7f5d4d;
+      --accent-soft: #dbc8bc;
+      --shadow: 0 22px 60px rgba(72, 49, 39, 0.08);
+      --max: 1240px;
+      --radius: 28px;
+      --sans: "Inter", "Avenir Next", "Segoe UI", Arial, sans-serif;
+      --serif: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
     }
 
-    *{ box-sizing:border-box; }
-    html,body{ height:100%; }
-    body{
-      margin:0;
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
       font-family: var(--sans);
       color: var(--text);
       background:
-        radial-gradient(1200px 700px at 18% 12%, rgba(var(--accent), .18), transparent 60%),
-        radial-gradient(900px 620px at 85% 18%, rgba(var(--accent2), .14), transparent 55%),
-        radial-gradient(900px 700px at 50% 100%, rgba(99,102,241,.12), transparent 60%),
-        linear-gradient(180deg, var(--bg0), var(--bg1));
-      overflow-x:hidden;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
+        radial-gradient(circle at top right, rgba(255,255,255,0.55), transparent 28%),
+        linear-gradient(180deg, #f6eee8 0%, var(--bg) 45%, #eadbd2 100%);
+      line-height: 1.5;
     }
 
-    a{ color:inherit; text-decoration:none; }
-    a:hover{ opacity:.92; }
+    img {
+      max-width: 100%;
+      display: block;
+    }
 
-    /* Accessible focus */
-    :focus-visible{
-      outline: 2px solid rgba(var(--accent), .85);
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--accent);
       outline-offset: 3px;
-      border-radius: 10px;
     }
 
-    .wrap{
-      max-width: var(--max);
+    .shell {
+      width: min(calc(100% - 40px), var(--max));
       margin: 0 auto;
-      padding: 0 18px var(--space-7);
+      padding: 28px 0 56px;
     }
 
-    /* -----------------------------
-      Top nav (minimal + sticky)
-    ------------------------------ */
-    .topbar{
-      position: sticky;
-      top: 0;
-      z-index: 50;
-      background: linear-gradient(to bottom, rgba(7,10,18,.86), rgba(7,10,18,.55));
-      backdrop-filter: blur(14px);
-      border-bottom: 1px solid rgba(255,255,255,.08);
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+      margin-bottom: 42px;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-size: 0.78rem;
     }
-    .topbar-inner{
-      max-width: var(--max);
-      margin: 0 auto;
-      padding: 14px 18px;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap: 14px;
-    }
-    .brand{
-      display:flex;
-      align-items:center;
-      gap: 10px;
-      min-width: 220px;
-      user-select:none;
-    }
-    .mark{
-      width: 12px; height: 12px;
-      border-radius: 999px;
-      background: linear-gradient(135deg, rgba(var(--accent),1), rgba(var(--accent2),1));
-      box-shadow:
-        0 0 0 4px rgba(var(--accent), .15),
-        0 8px 24px rgba(0,0,0,.25);
-    }
-    .brand strong{
+
+    .brand {
       font-weight: 700;
-      letter-spacing: .2px;
-    }
-    .brand span{
-      color: var(--faint);
-      font-size: var(--step--1);
-      margin-left: 8px;
-      border-left: 1px solid rgba(255,255,255,.12);
-      padding-left: 10px;
-      white-space: nowrap;
+      letter-spacing: 0.22em;
     }
 
-    .nav{
-      display:flex;
-      gap: 8px;
-      flex-wrap:wrap;
-      justify-content:flex-end;
-      align-items:center;
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 14px 32px;
     }
-    .nav a{
-      font-size: var(--step--1);
-      color: var(--muted);
-      padding: 9px 11px;
-      border-radius: 999px;
-      border: 1px solid transparent;
+
+    .nav a {
+      padding: 6px 2px;
+      border-bottom: 1px solid transparent;
     }
-    .nav a:hover{
+
+    .nav a:hover,
+    .nav a.active {
+      border-bottom-color: var(--text);
       color: var(--text);
-      background: rgba(255,255,255,.05);
-      border-color: rgba(255,255,255,.06);
     }
 
-    /* -----------------------------
-      Layout primitives
-    ------------------------------ */
-    .card{
-      background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.04));
-      border: 1px solid var(--stroke);
-      border-radius: var(--radius-lg);
-      box-shadow: var(--shadow-soft);
-    }
-    .section{
-      margin-top: var(--space-6);
-      padding: clamp(18px, 1.4vw + 14px, 26px);
-    }
-    .section h2{
-      margin: 0 0 10px;
-      font-size: var(--step-1);
-      letter-spacing: -0.3px;
-    }
-    .lede{
-      margin: 0;
-      color: var(--muted);
-      line-height: 1.65;
-      max-width: 70ch;
-      font-size: var(--step-0);
-    }
-
-    .grid{
-      display:grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      gap: var(--space-4);
-      align-items:start;
-    }
-    @media (max-width: 960px){
-      .grid{ grid-template-columns: 1fr; }
-      .brand span{ display:none; }
-      .brand{ min-width:auto; }
-    }
-
-    .split{
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap: var(--space-3);
-      margin-top: var(--space-4);
-    }
-    @media (max-width: 900px){
-      .split{ grid-template-columns: 1fr; }
-    }
-
-    .panel{
-      padding: var(--space-4);
-      border-radius: var(--radius-md);
-      background: rgba(255,255,255,.05);
-      border: 1px solid rgba(255,255,255,.09);
-    }
-
-    /* -----------------------------
-      Hero
-    ------------------------------ */
-    .hero{
-      padding-top: var(--space-6);
-    }
-
-    .kicker{
-      display:inline-flex;
-      align-items:center;
-      gap: 10px;
-      color: var(--muted);
-      font-size: var(--step--1);
-      padding: 8px 12px;
-      border-radius: 999px;
-      background: rgba(255,255,255,.05);
-      border: 1px solid rgba(255,255,255,.10);
-    }
-    .kicker code{
-      font-family: var(--mono);
-      font-size: 12px;
-      color: rgba(255,255,255,.78);
-    }
-
-    h1{
-      margin: 16px 0 10px;
-      font-size: var(--step-4);
-      line-height: 1.05;
-      letter-spacing: -1.0px;
-    }
-
-    .sub{
-      margin: 0 0 var(--space-4);
-      color: var(--muted);
-      font-size: var(--step-1);
-      line-height: 1.55;
-      max-width: 60ch;
-    }
-
-    .cta-row{
-      display:flex;
-      flex-wrap:wrap;
-      gap: 10px;
-      align-items:center;
-      margin-top: var(--space-4);
-    }
-
-    .btn{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      gap: 10px;
-      padding: 11px 14px;
-      border-radius: 14px;
-      border: 1px solid rgba(255,255,255,.14);
-      background: rgba(255,255,255,.06);
-      color: var(--text);
-      font-weight: 650;
-      font-size: var(--step--1);
-      box-shadow: 0 10px 26px rgba(0,0,0,.20);
-      transition: transform .12s ease, background .12s ease, border-color .12s ease, filter .12s ease;
-      will-change: transform;
-    }
-    .btn:hover{
-      background: rgba(255,255,255,.10);
-      border-color: rgba(255,255,255,.18);
-      transform: translateY(-1px);
-    }
-    .btn.primary{
-      background: linear-gradient(135deg, rgba(var(--accent),.95), rgba(var(--accent2),.85));
-      border-color: rgba(255,255,255,.18);
-      color: #071022;
-      box-shadow: 0 20px 50px rgba(0,0,0,.28);
-    }
-    .btn.primary:hover{ filter: brightness(1.04) saturate(1.02); }
-    .btn .icon{ width: 16px; height: 16px; display:inline-grid; place-items:center; }
-
-    .micro{
-      display:flex;
-      gap: 10px;
-      flex-wrap:wrap;
-      margin-top: var(--space-4);
-      padding-top: var(--space-3);
-      border-top: 1px solid rgba(255,255,255,.08);
-    }
-    .pill{
-      font-size: 12px;
-      color: rgba(255,255,255,.78);
-      padding: 7px 11px;
-      border-radius: 999px;
-      background: rgba(255,255,255,.05);
-      border: 1px solid rgba(255,255,255,.10);
-    }
-
-    .aside{
-      display:grid;
-      gap: var(--space-3);
-      position: sticky;
-      top: 78px;
-    }
-    @media (max-width: 960px){
-      .aside{ position: static; }
-    }
-
-    .headshot{
-      overflow:hidden;
-      border-radius: var(--radius-lg);
-      border: 1px solid rgba(255,255,255,.12);
-      background: rgba(255,255,255,.04);
-      aspect-ratio: 1 / 1;
+    .hero-frame {
+      border: 1.5px solid var(--line-strong);
+      background: rgba(255, 252, 249, 0.52);
       box-shadow: var(--shadow);
-    }
-    .headshot img{
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transform: scale(1.02);
+      padding: clamp(24px, 4vw, 48px);
     }
 
-    .quickfacts{
-      padding: var(--space-4);
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.85fr);
+      gap: clamp(28px, 4vw, 48px);
+      align-items: stretch;
     }
-    .fact{
-      display:flex;
-      justify-content:space-between;
+
+    .eyebrow {
+      margin: 0 0 18px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.22em;
+      font-size: 0.74rem;
+      font-weight: 700;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(3rem, 7vw, 5.7rem);
+      line-height: 0.94;
+      letter-spacing: -0.06em;
+      max-width: 8ch;
+    }
+
+    .hero-copy {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 100%;
+    }
+
+    .intro {
+      margin: 22px 0 0;
+      font-family: var(--serif);
+      font-size: clamp(1.25rem, 2vw, 2.1rem);
+      line-height: 1.42;
+      max-width: 18ch;
+    }
+
+    .summary {
+      margin: 22px 0 0;
+      max-width: 60ch;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .hero-footer {
+      margin-top: 40px;
+      display: grid;
+      gap: 22px;
+    }
+
+    .contact-line {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      align-items: center;
+      font-size: 0.98rem;
+      color: var(--muted);
+    }
+
+    .contact-line strong {
+      color: var(--text);
+    }
+
+    .socials {
+      display: flex;
+      flex-wrap: wrap;
       gap: 12px;
-      padding: 10px 0;
-      border-bottom: 1px solid rgba(255,255,255,.08);
-      font-size: var(--step--1);
+    }
+
+    .socials a,
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 10px 16px;
+      border: 1px solid var(--line-strong);
+      background: rgba(255,255,255,0.45);
+      font-weight: 600;
+      transition: transform 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+    }
+
+    .socials a:hover,
+    .button:hover {
+      transform: translateY(-1px);
+      background: rgba(255,255,255,0.72);
+      border-color: var(--text);
+    }
+
+    .portrait-panel {
+      position: relative;
+      overflow: hidden;
+      min-height: 520px;
+      border: 1px solid var(--line);
+      background:
+        radial-gradient(circle at 75% 20%, rgba(255,255,255,0.82), transparent 30%),
+        linear-gradient(155deg, #efe7e0 8%, #dfcdbf 45%, #b89681 100%);
+    }
+
+    .portrait-panel::before {
+      content: "";
+      position: absolute;
+      inset: 32px;
+      border: 1px solid rgba(255,255,255,0.45);
+    }
+
+    .portrait-panel::after {
+      content: "";
+      position: absolute;
+      inset: auto 24px 24px auto;
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255,255,255,0.35), rgba(255,255,255,0));
+      filter: blur(6px);
+    }
+
+    .portrait-content {
+      position: relative;
+      z-index: 1;
+      height: 100%;
+      padding: 36px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .monogram {
+      width: 112px;
+      height: 112px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: -0.08em;
+      background: rgba(255,255,255,0.58);
+      border: 1px solid rgba(31,25,23,0.12);
+      box-shadow: 0 20px 40px rgba(72,49,39,0.08);
+    }
+
+    .portrait-meta {
+      max-width: 20rem;
+      margin-left: auto;
+      padding: 22px;
+      background: rgba(255, 248, 243, 0.72);
+      backdrop-filter: blur(4px);
+      border: 1px solid rgba(31,25,23,0.12);
+    }
+
+    .portrait-meta p {
+      margin: 0;
+      font-size: 0.98rem;
       color: var(--muted);
     }
-    .fact:last-child{ border-bottom:none; }
-    .fact b{ color: var(--text); font-weight: 700; }
 
-    /* -----------------------------
-      Experience list (clean + scannable)
-    ------------------------------ */
-    .timeline{
-      display:grid;
-      gap: var(--space-3);
-      margin-top: var(--space-4);
+    .portrait-meta strong {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 1.05rem;
+      letter-spacing: 0.02em;
+      color: var(--text);
     }
-    .role{
-      padding: var(--space-4);
-      border-radius: var(--radius-md);
-      background: rgba(255,255,255,.05);
-      border: 1px solid rgba(255,255,255,.10);
+
+    .section-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 24px;
+      margin-top: 24px;
     }
-    .role-top{
-      display:flex;
-      justify-content:space-between;
-      flex-wrap:wrap;
-      gap: 10px;
-      align-items:baseline;
+
+    .section-card,
+    .timeline-item,
+    .metric,
+    .info-card {
+      border: 1px solid var(--line);
+      background: rgba(255, 252, 249, 0.48);
     }
-    .role .where{
-      font-weight: 750;
-      letter-spacing: .2px;
+
+    .section-card,
+    .info-card {
+      padding: 28px;
     }
-    .role .when{
-      font-family: var(--mono);
-      font-size: 12px;
-      color: rgba(255,255,255,.60);
-      padding: 5px 9px;
-      border-radius: 999px;
-      border: 1px solid rgba(255,255,255,.10);
-      background: rgba(255,255,255,.04);
+
+    .section-block {
+      margin-top: 26px;
     }
-    .role .title{
-      margin-top: 6px;
+
+    .section-label {
+      margin: 0 0 14px;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
       color: var(--muted);
-      line-height: 1.45;
-      font-size: var(--step--1);
     }
 
-    .bullets{
-      margin: 12px 0 0;
-      padding: 0;
-      list-style:none;
-      display:grid;
-      gap: 10px;
-      color: var(--muted);
-      line-height: 1.65;
-    }
-    .bullets li{
-      display:flex;
-      gap: 10px;
-      align-items:flex-start;
-    }
-    .bullets li::before{
-      content:"";
-      width: 10px; height: 10px;
-      margin-top: 8px;
-      border-radius: 999px;
-      background: rgba(var(--accent), .85);
-      box-shadow: 0 0 0 4px rgba(var(--accent), .12);
-      flex: 0 0 10px;
+    .section-title {
+      margin: 0 0 16px;
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      letter-spacing: -0.04em;
     }
 
-    .chips{
-      display:flex;
-      flex-wrap:wrap;
-      gap: 8px;
-      margin-top: 12px;
-    }
-    .chip{
-      font-size: 12px;
-      color: rgba(255,255,255,.74);
-      padding: 6px 10px;
-      border-radius: 999px;
-      background: rgba(255,255,255,.05);
-      border: 1px solid rgba(255,255,255,.10);
-    }
-
-    /* -----------------------------
-      Work cards (minimal, premium)
-    ------------------------------ */
-    .workgrid{
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap: var(--space-3);
-      margin-top: var(--space-4);
-    }
-    @media (max-width: 900px){
-      .workgrid{ grid-template-columns: 1fr; }
-    }
-    .workcard{
-      padding: var(--space-4);
-      border-radius: var(--radius-md);
-      border: 1px solid rgba(255,255,255,.10);
-      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.04));
-      transition: transform .14s ease, border-color .14s ease, background .14s ease;
-    }
-    .workcard:hover{
-      transform: translateY(-2px);
-      border-color: rgba(255,255,255,.16);
-      background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.05));
-    }
-    .tag{
-      display:inline-flex;
-      align-items:center;
-      gap: 8px;
-      font-size: 12px;
-      padding: 6px 10px;
-      border-radius: 999px;
-      border: 1px solid rgba(var(--accent), .24);
-      background: rgba(var(--accent), .12);
-      color: rgba(255,255,255,.84);
-    }
-    .workcard h3{
-      margin: 12px 0 8px;
-      font-size: var(--step-0);
-      letter-spacing: -0.2px;
-    }
-    .workcard p{
+    .section-text {
       margin: 0;
       color: var(--muted);
-      line-height: 1.65;
-    }
-    .workcard .small{
-      margin-top: 12px;
-      color: rgba(255,255,255,.58);
-      font-size: var(--step--1);
+      max-width: 62ch;
     }
 
-    /* -----------------------------
-      Contact
-    ------------------------------ */
-    .contact{
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap: var(--space-3);
-      margin-top: var(--space-4);
-    }
-    @media (max-width: 900px){
-      .contact{ grid-template-columns: 1fr; }
-    }
-    .contact a.link{
-      color: rgba(var(--accent), .95);
-      text-decoration: underline;
-      text-decoration-color: rgba(var(--accent), .35);
-      text-underline-offset: 3px;
-    }
-    .contact a.link:hover{
-      text-decoration-color: rgba(var(--accent), .75);
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 24px;
     }
 
-    /* -----------------------------
-      Footer
-    ------------------------------ */
-    .footer{
-      margin-top: var(--space-6);
-      padding: var(--space-4) 4px 0;
-      border-top: 1px solid rgba(255,255,255,.10);
-      display:flex;
-      justify-content:space-between;
+    .metric {
+      padding: 22px;
+    }
+
+    .metric strong {
+      display: block;
+      font-size: clamp(1.9rem, 3vw, 2.8rem);
+      letter-spacing: -0.06em;
+      margin-bottom: 6px;
+    }
+
+    .metric span {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 18px;
+      margin-top: 24px;
+    }
+
+    .timeline-item {
+      padding: 24px;
+    }
+
+    .timeline-top {
+      display: flex;
+      justify-content: space-between;
       gap: 12px;
-      flex-wrap:wrap;
-      color: rgba(255,255,255,.58);
-      font-size: var(--step--1);
-    }
-    .kbd{
-      font-family: var(--mono);
-      border: 1px solid rgba(255,255,255,.14);
-      background: rgba(255,255,255,.05);
-      padding: 2px 8px;
-      border-radius: 9px;
-      color: rgba(255,255,255,.76);
+      align-items: baseline;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
     }
 
-    /* Respect reduced motion */
-    @media (prefers-reduced-motion: reduce){
-      *{ scroll-behavior: auto !important; transition:none !important; }
+    .timeline-top strong {
+      font-size: 1.15rem;
+    }
+
+    .timeline-top span {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .timeline-role {
+      margin: 0 0 14px;
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 20px;
+      color: var(--muted);
+    }
+
+    li + li {
+      margin-top: 10px;
+    }
+
+    .split-list {
+      display: grid;
+      gap: 18px;
+    }
+
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 22px;
+    }
+
+    .tag {
+      padding: 8px 12px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.45);
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 24px;
+    }
+
+    .portfolio-card {
+      padding: 24px;
+      border: 1px solid var(--line);
+      background: rgba(255, 252, 249, 0.48);
+      min-height: 100%;
+    }
+
+    .portfolio-card span {
+      display: inline-block;
+      margin-bottom: 12px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--line-strong);
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+
+    .portfolio-card h3 {
+      margin: 0 0 10px;
+      font-size: 1.18rem;
+    }
+
+    .portfolio-card p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .footer-card {
+      margin-top: 28px;
+      padding: 32px;
+      border: 1px solid var(--line-strong);
+      background: linear-gradient(180deg, rgba(255,255,255,0.45), rgba(255,255,255,0.2));
+    }
+
+    .footer-card h2 {
+      margin: 0 0 12px;
+      font-size: clamp(2rem, 3vw, 2.8rem);
+      letter-spacing: -0.05em;
+    }
+
+    .footer-card p {
+      margin: 0 0 22px;
+      color: var(--muted);
+      max-width: 62ch;
+    }
+
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .button.primary {
+      background: var(--text);
+      color: #f9f3ee;
+      border-color: var(--text);
+    }
+
+    .button.primary:hover {
+      color: #fff;
+      background: #342724;
+    }
+
+    .site-footer {
+      margin-top: 22px;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 980px) {
+      .hero-grid,
+      .section-grid,
+      .metrics,
+      .portfolio-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .portrait-panel {
+        min-height: 420px;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .shell {
+        width: min(calc(100% - 24px), var(--max));
+        padding-top: 20px;
+      }
+
+      .topbar {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 28px;
+      }
+
+      .nav {
+        gap: 10px 18px;
+        justify-content: flex-start;
+      }
+
+      .hero-frame,
+      .section-card,
+      .info-card,
+      .timeline-item,
+      .portfolio-card,
+      .footer-card {
+        padding: 22px;
+      }
+
+      .portrait-content {
+        padding: 24px;
+      }
+
+      .portrait-panel::before {
+        inset: 18px;
+      }
     }
   </style>
 </head>
-
 <body>
-  <header class="topbar" role="banner">
-    <div class="topbar-inner">
-      <a class="brand" href="#top" aria-label="Go to top">
-        <span class="mark" aria-hidden="true"></span>
-        <strong>Cobey Culton</strong>
-        <span>Strategic Communications</span>
-      </a>
-
-      <nav class="nav" aria-label="Primary">
-        <a href="#about">About</a>
+  <div class="shell">
+    <header class="topbar" id="top">
+      <a href="#top" class="brand">Cobey Culton</a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#bio">Bio</a>
+        <a href="#portfolio">Portfolio</a>
         <a href="#experience">Experience</a>
-        <a href="#work">Work</a>
-        <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </nav>
-    </div>
-  </header>
+    </header>
 
-  <main id="top" class="wrap">
-    <!-- HERO -->
-    <section class="hero">
-      <div class="grid">
-        <div class="card section" style="margin-top:0;">
-          <div class="kicker">
-            <code>Earned media</code>
-            <span aria-hidden="true">•</span>
-            <span>Healthcare • Public Health • Health Tech</span>
+    <main>
+      <section class="hero-frame" aria-labelledby="hero-title">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <div>
+              <p class="eyebrow">Strategic communications leader</p>
+              <h1 id="hero-title">Cobey Culton</h1>
+              <p class="intro">
+                I help healthcare, public health, and health tech organizations turn complex work into stories people trust.
+              </p>
+              <p class="summary">
+                With 10 years of experience across research, government, and mission-driven organizations, I build media strategies,
+                executive narratives, and AI-enabled communications workflows that increase visibility and support growth.
+              </p>
+            </div>
+
+            <div class="hero-footer">
+              <div class="contact-line">
+                <strong>Raleigh, NC</strong>
+                <span>|</span>
+                <a href="tel:9192826754">(919) 282-6754</a>
+                <span>|</span>
+                <a href="mailto:cobey.culton@gmail.com">cobey.culton@gmail.com</a>
+              </div>
+              <div class="socials" aria-label="Contact links">
+                <a href="mailto:cobey.culton@gmail.com">Email</a>
+                <a href="https://www.linkedin.com/in/cobey" target="_blank" rel="noreferrer">LinkedIn</a>
+                <a href="#contact">Let’s talk</a>
+              </div>
+            </div>
           </div>
 
-          <h1>Clarity, credibility, and coverage for work that matters.</h1>
+          <div class="portrait-panel" aria-label="Profile highlight panel">
+            <div class="portrait-content">
+              <div class="monogram" aria-hidden="true">CC</div>
+              <div class="portrait-meta">
+                <strong>Brand visibility with substance</strong>
+                <p>
+                  Proven in earned media, executive support, crisis response, and translating scientific or data-heavy work into accessible narratives.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-          <p class="sub">
-            I help research and health organizations turn complex ideas into crisp narratives—then earn attention
-            through media relations, thought leadership, and executive visibility.
+      <section class="section-block" id="bio">
+        <div class="section-card">
+          <p class="section-label">Bio</p>
+          <h2 class="section-title">Communications strategy rooted in clarity, credibility, and measurable results.</h2>
+          <p class="section-text">
+            I currently lead media relations work at RTI International, where I promote a global research portfolio, guide thought leadership strategy,
+            and support executive visibility. My background includes high-volume press operations at North Carolina’s largest state agency and hands-on
+            experience helping leaders navigate crisis moments, policy scrutiny, and public-facing announcements.
           </p>
 
-          <div class="cta-row">
-            <a class="btn primary" href="#contact"><span class="icon" aria-hidden="true">✉️</span>Contact</a>
-            <a class="btn" href="assets/Cobey-Culton-Resume.pdf" target="_blank" rel="noopener"><span class="icon" aria-hidden="true">📄</span>Resume</a>
-            <a class="btn" href="assets/Cobey-Culton-Work-Samples.pdf" target="_blank" rel="noopener"><span class="icon" aria-hidden="true">🗂️</span>Work samples</a>
-            <a class="btn" href="https://www.linkedin.com/in/cobey/" target="_blank" rel="noopener"><span class="icon" aria-hidden="true">in</span>LinkedIn</a>
+          <div class="metrics" aria-label="Career highlights">
+            <div class="metric">
+              <strong>10</strong>
+              <span>years in strategic communications and media relations</span>
+            </div>
+            <div class="metric">
+              <strong>21%</strong>
+              <span>increase in Tier 1 media coverage since joining RTI</span>
+            </div>
+            <div class="metric">
+              <strong>30+</strong>
+              <span>AI tools assessed while chairing an internal communications task force</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-block" id="portfolio">
+        <div class="section-grid">
+          <div class="section-card">
+            <p class="section-label">Portfolio</p>
+            <h2 class="section-title">The kind of work I want to keep doing next.</h2>
+            <p class="section-text">
+              I’m pursuing communications, brand, and marketing strategy opportunities where storytelling drives both trust and momentum—especially in health,
+              research, and mission-driven environments.
+            </p>
+
+            <div class="tag-row" aria-label="Areas of strength">
+              <span class="tag">Media strategy</span>
+              <span class="tag">Thought leadership</span>
+              <span class="tag">Executive communications</span>
+              <span class="tag">AI productivity</span>
+              <span class="tag">Crisis response</span>
+              <span class="tag">Healthcare storytelling</span>
+            </div>
           </div>
 
-          <div class="micro" aria-label="Highlights">
-            <span class="pill">Raleigh, NC</span>
-            <span class="pill">10+ years</span>
-            <span class="pill">Tier-1 placements</span>
-            <span class="pill">AI tool adoption</span>
+          <div class="info-card">
+            <p class="section-label">Education & awards</p>
+            <div class="split-list">
+              <div>
+                <strong>North Carolina State University</strong>
+                <p class="section-text">Jenkins MBA Candidate, Poole College of Management — expected May 2029.</p>
+              </div>
+              <div>
+                <strong>UNC-Chapel Hill</strong>
+                <p class="section-text">B.A. in Journalism & Mass Communication (Public Relations) and Political Science.</p>
+              </div>
+              <div>
+                <strong>Recognition</strong>
+                <p class="section-text">PR Daily Media Relations Award Finalist (2025), RTI Soar Award (2022), and State of North Carolina Civil Service Commendations (2016, 2018).</p>
+              </div>
+            </div>
           </div>
         </div>
 
-        <aside class="aside" aria-label="Profile">
-          <div class="headshot">
-            <img src="assets/headshot.jpg" alt="Cobey Culton headshot" width="900" height="900" />
-          </div>
-
-          <div class="card quickfacts" aria-label="Quick facts">
-            <div class="fact"><b>Strength</b><span>Complex → clear</span></div>
-            <div class="fact"><b>Focus</b><span>Earned media + exec comms</span></div>
-            <div class="fact"><b>Edge</b><span>AI workflows for comms</span></div>
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="card section">
-      <h2>About</h2>
-      <p class="lede">
-        I’ve spent the last decade helping healthcare and public health leaders communicate with precision.
-        My work blends editorial judgment, calm crisis response, and a product mindset for repeatable comms systems.
-      </p>
-
-      <div class="split">
-        <div class="panel">
-          <h3 style="margin:0 0 6px;font-size:var(--step-0);letter-spacing:-.2px;">What I’m best at</h3>
-          <p style="margin:0;color:var(--muted);line-height:1.7;">
-            Finding the narrative that’s both accurate and compelling—then packaging it for the right reporters,
-            audiences, and moments.
-          </p>
+        <div class="portfolio-grid">
+          <article class="portfolio-card">
+            <span>Healthcare research</span>
+            <h3>Genome sequencing-based newborn screening</h3>
+            <p>
+              Communications lead for a complex science story that earned local, trade, and national coverage by focusing on impact, accessibility, and trust.
+            </p>
+          </article>
+          <article class="portfolio-card">
+            <span>Executive visibility</span>
+            <h3>C-suite media prep and support</h3>
+            <p>
+              Trusted partner for executive media training, interview preparation, and message refinement in high-stakes public settings.
+            </p>
+          </article>
+          <article class="portfolio-card">
+            <span>Government communications</span>
+            <h3>High-volume press response and crisis coordination</h3>
+            <p>
+              Managed rapid-response media needs during water contamination coverage, Medicaid reform scrutiny, disease outbreaks, and disaster recovery communications.
+            </p>
+          </article>
+          <article class="portfolio-card">
+            <span>AI in communications</span>
+            <h3>Modern workflow adoption</h3>
+            <p>
+              Chaired an 11-person task force that evaluated more than 30 AI tools and led adoption of practical solutions for communications teams.
+            </p>
+          </article>
         </div>
+      </section>
 
-        <div class="panel">
-          <h3 style="margin:0 0 6px;font-size:var(--step-0);letter-spacing:-.2px;">What I’m looking for</h3>
-          <p style="margin:0;color:var(--muted);line-height:1.7;">
-            Marketing / brand strategy or comms leadership roles where storytelling, credibility, and growth intersect—
-            especially in health tech and mission-driven organizations.
-          </p>
-        </div>
-      </div>
-    </section>
+      <section class="section-block" id="experience">
+        <div class="section-grid">
+          <div class="section-card">
+            <p class="section-label">Experience</p>
+            <h2 class="section-title">A resume translated into a cleaner, faster story.</h2>
+            <p class="section-text">
+              My background spans institutional research communications, government press operations, and sports media relations—giving me a mix of strategy,
+              urgency, and editorial discipline.
+            </p>
 
-    <!-- EXPERIENCE -->
-    <section id="experience" class="card section">
-      <h2>Experience</h2>
-      <p class="lede">
-        A few roles that show scope, ownership, and outcomes. (Details and supporting artifacts are in the PDFs.)
-      </p>
+            <div class="timeline">
+              <article class="timeline-item">
+                <div class="timeline-top">
+                  <strong>RTI International</strong>
+                  <span>January 2019 – Present · Research Triangle Park, NC</span>
+                </div>
+                <p class="timeline-role">Media Relations Specialist III (2022–Present) · Media Relations Specialist II (2019–2022)</p>
+                <ul>
+                  <li>Promote RTI’s $1.2B global research portfolio through proactive media relations and thought leadership strategy.</li>
+                  <li>Secure coverage in outlets including The New York Times, The Washington Post, STAT, and Fierce Healthcare.</li>
+                  <li>Lead communications for newborn screening work and support CEO and senior leadership media engagements.</li>
+                </ul>
+              </article>
 
-      <div class="timeline">
-        <article class="role">
-          <div class="role-top">
-            <div class="where">RTI International • Research Triangle Park, NC</div>
-            <div class="when">2019 — Present</div>
+              <article class="timeline-item">
+                <div class="timeline-top">
+                  <strong>North Carolina Department of Health and Human Services</strong>
+                  <span>August 2016 – December 2018 · Raleigh, NC</span>
+                </div>
+                <p class="timeline-role">Press Assistant</p>
+                <ul>
+                  <li>Served as a primary media contact for North Carolina’s largest government agency, supporting a $20B budget and 11 million residents.</li>
+                  <li>Coordinated responses to 100+ media inquiries monthly and served as spokesperson in 60+ news stories.</li>
+                  <li>Prepared department leaders for interviews, crises, and statewide media tours following Hurricane Florence.</li>
+                </ul>
+              </article>
+
+              <article class="timeline-item">
+                <div class="timeline-top">
+                  <strong>Southern Conference</strong>
+                  <span>July 2015 – June 2016 · Spartanburg, SC</span>
+                </div>
+                <p class="timeline-role">Media Relations Assistant</p>
+                <ul>
+                  <li>Completed a one-year internship supporting media operations, event coverage, and communications logistics.</li>
+                </ul>
+              </article>
+            </div>
           </div>
-          <div class="title">Media Relations Specialist III (2022–Present) • Media Relations Specialist II (2019–2022)</div>
 
-          <ul class="bullets">
-            <li>Promote a global research portfolio through proactive media relations and thought leadership strategy.</li>
-            <li>Comms lead for genome sequencing–based newborn screening; secured local, trade, and national coverage.</li>
-            <li>Increased Tier-1 media coverage by 21% with recurring placements in top national outlets.</li>
-            <li>Media train C-suite and senior leaders; support CEO engagements end-to-end.</li>
-            <li>Chaired an AI task force that evaluated 30+ tools and adopted multiple tools for comms workflows.</li>
-          </ul>
-
-          <div class="chips" aria-label="Role tags">
-            <span class="chip">Earned media</span>
-            <span class="chip">Executive comms</span>
-            <span class="chip">Healthcare</span>
-            <span class="chip">AI enablement</span>
-          </div>
-        </article>
-
-        <article class="role">
-          <div class="role-top">
-            <div class="where">NCDHHS • Raleigh, NC</div>
-            <div class="when">2016 — 2018</div>
-          </div>
-          <div class="title">Press Assistant</div>
-
-          <ul class="bullets">
-            <li>Primary media contact for the state’s largest agency, supporting high-stakes issues and rapid response.</li>
-            <li>Coordinated high-volume inquiry management and served as spokesperson across dozens of stories.</li>
-            <li>Supported crisis communications (contamination, Medicaid reform, outbreaks) with clear, consistent messaging.</li>
-            <li>Prepared leaders with talking points and briefing materials; supported multi-day media tours.</li>
-          </ul>
-
-          <div class="chips" aria-label="Role tags">
-            <span class="chip">Government comms</span>
-            <span class="chip">Crisis response</span>
-            <span class="chip">Spokesperson</span>
-          </div>
-        </article>
-
-        <article class="role">
-          <div class="role-top">
-            <div class="where">Southern Conference • Spartanburg, SC</div>
-            <div class="when">2015 — 2016</div>
-          </div>
-          <div class="title">Media Relations Assistant (Internship)</div>
-
-          <ul class="bullets">
-            <li>Supported conference communications and coverage through a full-time, one-year media relations internship.</li>
-          </ul>
-
-          <div class="chips" aria-label="Role tags">
-            <span class="chip">Media relations</span>
-            <span class="chip">Content ops</span>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- WORK -->
-    <section id="work" class="card section">
-      <h2>Selected work</h2>
-      <p class="lede">
-        A small set of representative outcomes. For full context, open the Work Samples PDF.
-      </p>
-
-      <div class="workgrid">
-        <article class="workcard">
-          <div class="tag">Press release</div>
-          <h3>Economic development research</h3>
-          <p>
-            Published a release promoting analysis of federal innovation funding applications, translating findings into
-            a story tailored for regional and policy audiences.
-          </p>
-          <div class="small">Dec 2023</div>
-        </article>
-
-        <article class="workcard">
-          <div class="tag">National placement</div>
-          <h3>Genome newborn screening feature</h3>
-          <p>
-            Partnered with researchers and journalist to shape a human, accurate narrative on early detection and impact.
-          </p>
-          <div class="small">Jun 2024</div>
-        </article>
-
-        <article class="workcard">
-          <div class="tag">Op-ed</div>
-          <h3>Buprenorphine misconceptions</h3>
-          <p>
-            Ghostwrote and placed an argument grounded in modeling and evidence to reduce barriers to treatment.
-          </p>
-          <div class="small">Jan 2024</div>
-        </article>
-
-        <article class="workcard">
-          <div class="tag">CEO visibility</div>
-          <h3>Televised executive interview</h3>
-          <p>
-            Secured and managed a TV placement for the CEO, including prep, messaging, and on-site support.
-          </p>
-          <div class="small">Sep 2023</div>
-        </article>
-      </div>
-
-      <div class="cta-row" style="margin-top:var(--space-4);">
-        <a class="btn" href="assets/Cobey-Culton-Work-Samples.pdf" target="_blank" rel="noopener">
-          <span class="icon" aria-hidden="true">↗</span>Open the full work samples PDF
-        </a>
-      </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section id="skills" class="card section">
-      <h2>Skills</h2>
-      <p class="lede">
-        A tight set of strengths and tools—optimized for what hiring managers actually scan.
-      </p>
-
-      <div class="split">
-        <div class="panel">
-          <h3 style="margin:0 0 10px;font-size:var(--step-0);letter-spacing:-.2px;">Core</h3>
-          <ul class="bullets" style="margin-top:0;">
-            <li>Media relations, editorial judgment, and spokesperson support</li>
-            <li>Thought leadership, exec positioning, and message architecture</li>
-            <li>Crisis communications and rapid response systems</li>
-            <li>Project management and cross-functional stakeholder alignment</li>
-          </ul>
-        </div>
-        <div class="panel">
-          <h3 style="margin:0 0 10px;font-size:var(--step-0);letter-spacing:-.2px;">Tools</h3>
-          <ul class="bullets" style="margin-top:0;">
-            <li>AI: ChatGPT, Copilot, Perplexity (workflow design + governance)</li>
-            <li>PR: Cision, Meltwater, Muck Rack, Critical Mention</li>
-            <li>Marketing/web: GA4, WordPress/Drupal, Sprout Social</li>
-            <li>Creative: Adobe Creative Suite, Final Cut Pro</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="card section">
-      <h2>Contact</h2>
-      <p class="lede">
-        If you’re building a brand with real credibility—and need narratives that earn attention—let’s connect.
-      </p>
-
-      <div class="contact">
-        <div class="panel">
-          <h3 style="margin:0 0 10px;font-size:var(--step-0);letter-spacing:-.2px;">Reach me</h3>
-          <p style="margin:0;color:var(--muted);line-height:1.8;">
-            Email: <a class="link" href="mailto:cobey.culton@gmail.com">cobey.culton@gmail.com</a><br/>
-            LinkedIn: <a class="link" href="https://www.linkedin.com/in/cobey/" target="_blank" rel="noopener">linkedin.com/in/cobey</a><br/>
-            Location: Raleigh, NC
-          </p>
-
-          <div class="cta-row" style="margin-top:14px;">
-            <a class="btn primary" href="mailto:cobey.culton@gmail.com?subject=Hello%20Cobey">
-              <span class="icon" aria-hidden="true">✉️</span>Email
-            </a>
-            <a class="btn" href="https://www.linkedin.com/in/cobey/" target="_blank" rel="noopener">
-              <span class="icon" aria-hidden="true">in</span>LinkedIn message
-            </a>
+          <div class="info-card">
+            <p class="section-label">Skills</p>
+            <div class="split-list">
+              <div>
+                <strong>Communications</strong>
+                <p class="section-text">Media relations, AP Style, thought leadership, spokesperson support, executive prep, crisis communications.</p>
+              </div>
+              <div>
+                <strong>AI & productivity</strong>
+                <p class="section-text">ChatGPT, Microsoft Copilot, Perplexity, and communications workflow assessment and adoption.</p>
+              </div>
+              <div>
+                <strong>Marketing & analytics</strong>
+                <p class="section-text">Google Analytics 4, Mailchimp, Pardot, iContact, Salesforce, Smartsheet, Asana.</p>
+              </div>
+              <div>
+                <strong>PR, web, and creative tools</strong>
+                <p class="section-text">Cision, Meltwater, Muck Rack, Critical Mention, Drupal, WordPress, Adobe Creative Suite, Final Cut Pro, Sprout Social.</p>
+              </div>
+              <div>
+                <strong>Certifications</strong>
+                <p class="section-text">Google Analytics 4 (GA4) and HubSpot Academy Digital Marketing.</p>
+              </div>
+            </div>
           </div>
         </div>
+      </section>
 
-        <div class="panel">
-          <h3 style="margin:0 0 10px;font-size:var(--step-0);letter-spacing:-.2px;">One-sentence pitch</h3>
-          <p style="margin:0;color:var(--muted);line-height:1.75;">
-            I’m a strategic communications leader in healthcare and public health, translating complex work into crisp narratives
-            and measurable earned-media outcomes—while building modern, AI-enabled comms workflows.
-          </p>
-          <p style="margin-top:14px;color:rgba(255,255,255,.58);line-height:1.7;">
-            Pro tip: press <span class="kbd">/</span> to jump to Contact.
-          </p>
+      <section class="footer-card" id="contact">
+        <p class="section-label">Contact</p>
+        <h2>Open to the next chapter.</h2>
+        <p>
+          If you’re hiring for communications, brand, or marketing strategy work and need someone who can pair sharp media instincts with calm execution,
+          I’d love to connect.
+        </p>
+        <div class="button-row">
+          <a class="button primary" href="mailto:cobey.culton@gmail.com">Email Cobey</a>
+          <a class="button" href="https://www.linkedin.com/in/cobey" target="_blank" rel="noreferrer">View LinkedIn</a>
+          <a class="button" href="tel:9192826754">Call (919) 282-6754</a>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-    <footer class="footer" role="contentinfo">
-      <div>© <span id="y"></span> Cobey Culton</div>
-      <div style="display:flex; gap:10px; flex-wrap:wrap;">
-        <a href="#about">About</a><span aria-hidden="true">·</span>
-        <a href="#experience">Experience</a><span aria-hidden="true">·</span>
-        <a href="#work">Work</a><span aria-hidden="true">·</span>
-        <a href="#contact">Contact</a>
-      </div>
+    <footer class="site-footer">
+      <span>Draft personal website for Cobey Culton’s job search.</span>
+      <span>Designed with a soft editorial layout inspired by the reference image.</span>
     </footer>
-  </main>
+  </div>
 
   <script>
-    // Year
-    document.getElementById('y').textContent = new Date().getFullYear();
-
-    // Smooth scroll (without breaking reduced-motion)
-    const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    document.querySelectorAll('a[href^="#"]').forEach(a => {
-      a.addEventListener('click', (e) => {
-        const id = a.getAttribute('href');
-        const el = document.querySelector(id);
-        if (!el) return;
-        e.preventDefault();
-        el.scrollIntoView({ behavior: prefersReduced ? 'auto' : 'smooth', block: 'start' });
-        history.replaceState(null, '', id);
-      });
-    });
-
-    // Keyboard shortcut: "/" jumps to Contact
-    document.addEventListener('keydown', (e) => {
-      const t = e.target;
-      const typing = t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.isContentEditable);
-      if (typing) return;
-      if (e.key === '/') {
-        e.preventDefault();
-        document.getElementById('contact').scrollIntoView({ behavior: prefersReduced ? 'auto' : 'smooth', block: 'start' });
-      }
-    });
-
-    // Subtle active nav state (IntersectionObserver)
-    const navLinks = Array.from(document.querySelectorAll('.nav a[href^="#"]'));
-    const sections = navLinks
-      .map(a => document.querySelector(a.getAttribute('href')))
+    const navLinks = document.querySelectorAll('.nav a');
+    const sections = [...navLinks]
+      .map((link) => document.querySelector(link.getAttribute('href')))
       .filter(Boolean);
 
-    const setActive = (id) => {
-      navLinks.forEach(a => {
-        const active = a.getAttribute('href') === id;
-        a.style.color = active ? 'rgba(255,255,255,.92)' : 'rgba(255,255,255,.72)';
-        a.style.background = active ? 'rgba(255,255,255,.05)' : 'transparent';
-        a.style.borderColor = active ? 'rgba(255,255,255,.08)' : 'transparent';
-      });
-    };
-
     if ('IntersectionObserver' in window) {
-      const io = new IntersectionObserver((entries) => {
-        const visible = entries
-          .filter(e => e.isIntersecting)
-          .sort((a,b) => b.intersectionRatio - a.intersectionRatio)[0];
-        if (visible?.target?.id) setActive('#' + visible.target.id);
-      }, { rootMargin: '-30% 0px -60% 0px', threshold: [0.1, 0.2, 0.35, 0.5] });
+      const observer = new IntersectionObserver(
+        (entries) => {
+          const visible = entries
+            .filter((entry) => entry.isIntersecting)
+            .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
 
-      sections.forEach(s => io.observe(s));
-      setActive('#about');
+          if (!visible) return;
+          navLinks.forEach((link) => {
+            link.classList.toggle('active', link.getAttribute('href') === `#${visible.target.id}`);
+          });
+        },
+        {
+          rootMargin: '-25% 0px -55% 0px',
+          threshold: [0.2, 0.35, 0.5]
+        }
+      );
+
+      sections.forEach((section) => observer.observe(section));
     }
   </script>
 </body>
