@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Headshot placeholder</title>
+  <desc id="desc">Neutral placeholder portrait card with initials CC.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f7fb"/>
+      <stop offset="100%" stop-color="#dce3ef"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <circle cx="400" cy="360" r="150" fill="#b8c4d9"/>
+  <path d="M140 860c18-172 126-260 260-260s242 88 260 260" fill="#a7b6cf"/>
+  <rect x="200" y="730" width="400" height="160" rx="24" fill="#6b7f9f" opacity="0.92"/>
+  <text x="400" y="830" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="90" font-weight="700" fill="#ffffff">CC</text>
+</svg>
